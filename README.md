@@ -5,7 +5,7 @@ Home: https://github.com/dcs4cop/xcube-cds
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: xcube plugin for the Climate Data Store (CDS) API
 
