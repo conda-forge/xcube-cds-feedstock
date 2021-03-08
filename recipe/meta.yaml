@@ -1,5 +1,5 @@
 {% set name = "xcube-cds" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: f0844d3bb6a2e76a60bb24b737f664891bea5526006601bf3d48e41e10101260
+  sha256: 76c57c3e46bfede1d0143dfdd3a02781288a320ff5ea6285bf9efd8ea818c26e
 
 build:
   number: 0
@@ -22,10 +22,10 @@ requirements:
     # Python
     - python >=3.6
     # Required
-    - xcube >=0.6.0
+    - xcube >=0.7.0
     - cdsapi >=0.2.7
     - python-dateutil >=2.8.1
-    - xarray >=0.14.1
+    - xarray
     - numpy >=1.17
     - jsonschema >=3.2.0
 test:
