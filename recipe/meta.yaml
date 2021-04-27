@@ -1,5 +1,5 @@
 {% set name = "xcube-cds" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: 76c57c3e46bfede1d0143dfdd3a02781288a320ff5ea6285bf9efd8ea818c26e
+  sha256: 635f28b8a5c72354af75dc143d5081dd6da2334ab849ad5687c9a229a05798e5
 
 build:
   number: 0
