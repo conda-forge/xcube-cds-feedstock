@@ -44,9 +44,9 @@ about:
 
 extra:
   recipe-maintainers:
-    - pont-us
-    - dzelge
-    - TonioF
-    - forman
     - AliceBalfanz
+    - forman
+    - pont-us
+    - TejasMorbagal
     - thomasstorm
+    - TonioF
