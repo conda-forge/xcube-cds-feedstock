@@ -1,13 +1,13 @@
 {% set name = "xcube-cds" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/dcs4cop/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: 1167f299b5754057bfdb88bce687f5fe3413cce945e40fafde81864e58a75a47
+  url: https://github.com/xcube-dev/xcube-cds/archive/v{{ version }}.tar.gz
+  sha256: 437a5155dc7162188a9800936f9b6b56d72fc5dc3b75c8890023f757f36e0b01
 
 build:
   number: 0
@@ -18,13 +18,15 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     # Python
     - python >=3.8
     # Required
-    - cdsapi >=0.5.1
+    - cdsapi >=0.7.2
     - jsonschema >=3.2.0
     - numpy >=1.17
+    - pandas
     - python-dateutil >=2.8.1
     - xarray >=0.18.2
     - xcube >=0.9.0
@@ -34,19 +36,22 @@ test:
 
 about:
   summary: xcube plugin for the Climate Data Store (CDS) API
-  home: https://github.com/dcs4cop/xcube-cds
+  home: https://github.com/xcube-dev/xcube-cds
   license: MIT
   license_family: MIT
   license_file: LICENSE
   description: xcube-cds is an xcube plugin which can generate data cubes from the Copernicus Climate Data Store (CDS) API.
-  doc_url: https://github.com/dcs4cop/xcube-cds/blob/master/README.md
-  dev_url: https://github.com/dcs4cop/xcube-cds
+  doc_url: https://github.com/xcube-dev/xcube-cds/blob/master/README.md
+  dev_url: https://github.com/xcube-dev/xcube-cds
 
 extra:
   recipe-maintainers:
     - AliceBalfanz
+    - b-yogesh
     - forman
+    - konstntokas    
     - pont-us
+    - ruchimotwaniBC
     - TejasMorbagal
     - thomasstorm
     - TonioF
