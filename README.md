@@ -3,15 +3,15 @@ About xcube-cds-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xcube-cds-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/dcs4cop/xcube-cds
+Home: https://github.com/xcube-dev/xcube-cds
 
 Package license: MIT
 
 Summary: xcube plugin for the Climate Data Store (CDS) API
 
-Development: https://github.com/dcs4cop/xcube-cds
+Development: https://github.com/xcube-dev/xcube-cds
 
-Documentation: https://github.com/dcs4cop/xcube-cds/blob/master/README.md
+Documentation: https://github.com/xcube-dev/xcube-cds/blob/master/README.md
 
 xcube-cds is an xcube plugin which can generate data cubes from the Copernicus Climate Data Store (CDS) API.
 
@@ -152,7 +152,10 @@ Feedstock Maintainers
 * [@AliceBalfanz](https://github.com/AliceBalfanz/)
 * [@TejasMorbagal](https://github.com/TejasMorbagal/)
 * [@TonioF](https://github.com/TonioF/)
+* [@b-yogesh](https://github.com/b-yogesh/)
 * [@forman](https://github.com/forman/)
+* [@konstntokas](https://github.com/konstntokas/)
 * [@pont-us](https://github.com/pont-us/)
+* [@ruchimotwaniBC](https://github.com/ruchimotwaniBC/)
 * [@thomasstorm](https://github.com/thomasstorm/)
 
