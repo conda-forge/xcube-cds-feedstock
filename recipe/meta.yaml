@@ -1,5 +1,5 @@
 {% set name = "xcube-cds" %}
-{% set version = "0.9.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: 437a5155dc7162188a9800936f9b6b56d72fc5dc3b75c8890023f757f36e0b01
+  sha256: 340aeb11facce81f5dd0dbf766ec8f8ec2e97916ec7ba72d3c2916bf05c7b56e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -51,7 +51,7 @@ extra:
     - AliceBalfanz
     - b-yogesh
     - forman
-    - konstntokas    
+    - konstntokas
     - pont-us
     - ruchimotwaniBC
     - TejasMorbagal
