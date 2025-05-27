@@ -1,5 +1,6 @@
 {% set name = "xcube-cds" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +8,10 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: 340aeb11facce81f5dd0dbf766ec8f8ec2e97916ec7ba72d3c2916bf05c7b56e
+  sha256: 71782115f5853602a90be23cb4f411cf432ee6022f767182cded426f1e3608c7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,7 +30,7 @@ requirements:
     - pandas
     - python-dateutil >=2.8.1
     - xarray >=0.18.2
-    - xcube >=0.9.0
+    - xcube >=1.8.0
 test:
   requires:
     - python {{ python_min }}
@@ -53,7 +54,6 @@ extra:
     - forman
     - konstntokas
     - pont-us
-    - ruchimotwaniBC
     - TejasMorbagal
     - thomasstorm
     - TonioF
