@@ -1,5 +1,5 @@
 {% set name = "xcube-cds" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: cef6e1ffd2ac918a856b9a169ad9b612c6d954e419a0546db5968cdf7b33d290
+  sha256: 57778c62d0e2c89bf26b425bcff800600b61f6b9703d95afce16d9a438c7da58
 
 build:
   number: 0
@@ -31,6 +31,8 @@ requirements:
     - python-dateutil >=2.8.1
     - xarray >=0.18.2
     - xcube >=1.8.0
+  run_constrained:
+    - dask >=2024.8  # numpy compatibility workaround. See PR #113.
 test:
   requires:
     - python {{ python_min }}
