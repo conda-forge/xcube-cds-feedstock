@@ -1,5 +1,5 @@
 {% set name = "xcube-cds" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-cds/archive/v{{ version }}.tar.gz
-  sha256: 7033f8454e4757f812a6e644efe019960d4f10d806d250747c969e52bf42061c
+  sha256: 65fcd2601a960484e12b616fe62ba3db288c88a66200ad61a837b4cf0f6a4fd0
 
 build:
   number: 0
@@ -59,4 +59,4 @@ extra:
     - pont-us
     - TejasMorbagal
     - thomasstorm
-    - TonioF    
+    - TonioF
